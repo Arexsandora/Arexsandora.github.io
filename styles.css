@@ -285,13 +285,13 @@ header h1 {
     margin-left: 10%;
     margin-bottom: 5%;
     font-size: 120%;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .nyaito-title{
     font-size: 200%;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -301,7 +301,7 @@ header h1 {
 ***************************************/
 .manager-title{
     font-size: 200%;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -310,7 +310,7 @@ header h1 {
     margin-left: 10%;
     margin-bottom: 5%;
     font-size: 120%;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 
