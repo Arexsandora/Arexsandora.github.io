@@ -1,0 +1,351 @@
+styles.css
+
+/* 全体のスタイル */
+body {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: hidden;
+    background-size: auto;
+    background-size: cover; /* 画面全体に表示 */
+    background-position: center; /* 中央揃え */
+    background-repeat: no-repeat; /* 繰り返さない */
+}
+
+
+
+/* ギャラリーのスタイル */
+.home-title{
+    margin-top: 10%;
+    font-size: 400%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.home-subtitle{
+    margin-top: -5%;
+    font-size: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+
+.gallery-subtitle h2{
+    margin-top: -10%;
+    font-size: 400%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 画像を自動調整して並べる */
+    gap: 15px; /* 画像の間にスペースを空ける */
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+.gallery-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3つのカラムを1行に並べる */
+    gap: 15px; /* 画像の間にスペースを空ける */
+    padding: 20px;
+    flex-wrap: wrap;
+}
+  
+  .gallery img {
+    width: 100%; /* 画像をコンテナに合わせて拡大 */
+    height: auto; /* アスペクト比を維持 */
+    border-radius: 8px; /* 角を少し丸める */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 画像に影をつけて立体感を出す */
+    transition: transform 0.3s ease; /* マウスオーバー時のエフェクト用 */
+  }
+  
+  /* 画像にホバー時のエフェクト */
+  .gallery img:hover {
+    transform: scale(1.05); /* 画像を少し拡大 */
+  }
+
+/* ナビゲーションバー */
+/*
+
+
+
+
+
+*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(0, 15, 71);
+}
+
+.navbar ul {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 98%;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: table-cell;
+    min-width: 50px;
+    border-right: 1px solid #ffffff;
+}
+
+.nav ul li:first-child{
+    border-left: 1px solid #ccc;
+    
+}
+
+.navbar ul li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar ul li a:hover {
+    background-color:#1d9ded;
+    border-bottom: 5px solid #797d97;
+}
+
+
+nav ul li.current{
+    font-weight: bold;
+   
+}
+
+nav ul li.current a{
+    border-bottom: 5px solid #4cf000;
+    color: #00B0F0;
+   
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2.5rem;
+    position: fixed;
+}
+
+
+/*プロフィール*/
+.Author-container{
+    display: flex;
+  }
+  
+ .profile-title{
+    margin-top: 10%;
+    font-size: 400%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+ }
+  
+  .yuria-img{
+    margin-top: -7%;
+    margin-left: 0%;
+  }
+  
+  .Profile-img{
+    margin-top: -23%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+  }
+  
+  .Profile-text{
+    font-size: 20px;
+    color: #fff;
+    margin-top: -33%;
+    margin-left: 43%;
+    margin-bottom: 30%;
+  }
+  
+
+
+/* ゲームセクション */
+.game-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.game-section h2 {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 40px;
+}
+
+/* ゲームカードのスタイル */
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.game-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.game-info h3 {
+    color: #4A90E2;
+    font-size: 1.8rem;
+}
+
+.game-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.play-button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #357ABD;
+}
+
+.return-button{
+    margin-bottom: 10%;
+    margin-left: 10%;
+    background-color: #fff;
+    border: double 6px #3cb371;
+    color: #3cb371;
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1em;
+    
+}
+.button-g{
+    margin-top: 10%;
+    margin-right: 80%;
+    margin-left: 0%;
+    
+    
+}
+
+.return-button:hover {
+    color: #3cb371;
+    background-color: #f0fff0;
+  }
+
+/**********コード詳細ページ*************
+***************************************/
+
+.details{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 120%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+  
+/**********にゃいと詳細ページ*************
+***************************************/
+
+.nyaito{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 120%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nyaito-title{
+    font-size: 200%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+/**********その他詳細ページ*************
+***************************************/
+.manager-title{
+    font-size: 200%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.manager{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 120%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+.pdf-button{
+    color: white;
+}
+
+
+
+/* フッター */
+footer {
+    margin-top: 2%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin-top: 10%;
+    margin: 0;
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 600px) {
+    .game-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-info {
+        text-align: center;
+    }
+}

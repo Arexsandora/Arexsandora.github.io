@@ -1,0 +1,130 @@
+otetudai.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おてつだいペンギン - 詳細ページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body background="Images/HOME_BG.png">
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="nyaito-title"><h2 style="text-align: center;">おてつだいペンギンの詳細</h2></div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#profile">PROFILE</a></li>
+            <li><a href="index.html#gallery">GALLERY</a></li>
+            <li><a href="#index.html#contact">CONTACT</a></li>
+            
+        </ul>
+    </nav>
+
+<div class="nyaito">
+
+    <!-- 詳細セクション -->
+    <section class="game-details">
+        <div class="game-introduction">
+            <h2>ゲームの紹介</h2>
+            
+            <p>
+                主人公のペンギンくんは様々などうぶつさんから、おてつだいを頼まれます。<br>
+                お手伝いはミニゲームになっており、算数や漢字を学んでいくゲームになっています。<br>
+                クリアするごとにシールがもらえて達成感も得られます。<br>
+                遊んで学ぶことを目的としたゲームです。
+            </p>
+        </div>
+
+        <div class="kikaku-img">
+            <div class="taosanyaito-code"><img src="Images/otetudai/otetudai-kikaku.png" width="600" height="390"></div>
+            
+
+        </div>
+        <!--
+        <div class="PV">
+
+            <video controls width="600">
+                <source src="#" type="video/mp4">
+                お使いのブラウザは動画をサポートしていません。
+            </video>
+         </div>
+
+         -->
+
+        <div class="game-feature">
+
+            <h2>ゲームの特徴</h2>
+                <ul>
+                    <li>あそびと学びをかけたゲーム</li>
+                    <li>豊富なミニゲームで飽きさせない</li>
+                    <li>タブレットで直感的な操作</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="game-mytask">
+            <h2>自分の担当箇所</h2>
+            <ul>
+                <li>移動システム（タップ移動）  制作時間：7時間</li>
+                <p>タップで通常移動、ダブルタップでダッシュ移動ができるようにしました。<br>
+                   タップした間隔の時間を計算し、移動スピードを乗算しています。<br>
+                </p>
+
+                <video controls width="600">
+                    <source src="Videos/otetudai/otetudai-move.mov" type="video/mp4">
+                    お使いのブラウザは動画をサポートしていません。
+                </video>
+                <br>
+                <br>
+                <li>メニュー画面  制作時間:3時間</li>
+                <p>
+                    サウンドやSEのボリュームをいじれるようにしました。<br>
+                    スライダーを使用しています。現在はBGMのみ実装しています。
+                </p>
+
+                <video controls width="600">
+                    <source src="Videos/otetudai/otetudai-menu.mov" type="video/mp4">
+                    お使いのブラウザは動画をサポートしていません。
+                </video>
+
+                <br>
+                <br>
+
+                <li>タイトル画面からの遷移</li>
+                <p>タイトル画面の遷移アニメーションを作り、それをスクリプトで呼び出しています。<br>
+                    プランナーからの要望で上から順番に図形が降りてきます。今後はフェードアウトを<br>
+                    実装する予定です。
+                </p>
+                    <br>
+                    <br>
+                <video controls width="600">
+                    <source src="videos/otetudai/otetudai-title.mov" type="video/mp4">
+                    お使いのブラウザは動画をサポートしていません。
+                </video>
+                <br>
+                <br>
+               
+                <a href="codelist-otetudai.html" class="play-button">コードを見る</a> <!-- リンク先を指定 -->
+            </ul>
+        </div>
+</div>
+
+
+        <!-- 戻るボタン -->
+        <a href="index.html" class="return-button">戻る</a> <!-- トップページへのリンク -->
+    </section>
+
+    <!-- フッター -->
+     <div class="footer">
+        <footer>
+            <p>&copy; 2024 私のゲームサイト | すべての権利を保有</p>
+        </footer>
+    </div> 
+
+</body>
+</html>
